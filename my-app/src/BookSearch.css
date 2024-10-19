@@ -1,0 +1,33 @@
+/* BookSearch.css */
+.book-search {
+    position: relative; /* Для позиционирования выпадающего списка */
+}
+
+.search-input {
+    width: 800px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%; /* Позиционируем под инпутом */
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px; /* Ограничение по высоте */
+    overflow-y: auto; /* Скроллинг */
+    z-index: 1000; /* Выше остальных элементов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Подсветка при наведении */
+}
